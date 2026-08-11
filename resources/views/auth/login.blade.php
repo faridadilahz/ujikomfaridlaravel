@@ -31,14 +31,21 @@
                     <h2 class="login-title">Masuk ke Admin Seruli</h2>
                 </div>
 
-                <form class="login-form" action="../admin/index.html" method="GET">
+                <form class="login-form" action="{{ route('login.post') }}" method="POST">
+                    @csrf
+
+                    @if ($errors->any())
+                        <div style="color: red; margin-bottom: 15px; font-size: 13px;">
+                            {{ $errors->first() }}
+                        </div>
+                    @endif
 
                     <div class="form-group">
-                        <label for="email" class="form-label">Alamat Email</label>
+                        <label for="email" class="form-label">Email</label>
                         <div class="input-wrapper">
                             <ion-icon name="mail-outline" class="input-icon"></ion-icon>
-                            <input type="text" id="email" class="form-input" placeholder="admin@seruli.sch.id" required
-                                autocomplete="off" />
+                            <input type="email" name="email" id="email" class="form-input" value="{{ old('email') }}"
+                                placeholder="Masukkan email" required />
                         </div>
                     </div>
 
@@ -46,7 +53,8 @@
                         <label for="password" class="form-label">Kata Sandi</label>
                         <div class="input-wrapper">
                             <ion-icon name="lock-closed-outline" class="input-icon"></ion-icon>
-                            <input type="password" id="password" class="form-input" placeholder="••••••••" required />
+                            <input type="password" name="password" id="password" class="form-input"
+                                placeholder="••••••••" required />
                             <button type="button" class="toggle-password" id="togglePassword">
                                 <ion-icon name="eye-outline" id="eyeIcon"></ion-icon>
                             </button>
@@ -55,16 +63,17 @@
 
                     <div class="form-options">
                         <label class="remember-me">
-                            <input type="checkbox" id="remember" />
+                            <input type="checkbox" name="remember" id="remember" />
                             <span>Ingat saya</span>
                         </label>
                         <a href="#" class="forgot-link">Lupa kata sandi?</a>
                     </div>
 
-                    <button type="submit" href="../admin/index.html" class="btn-login-submit">
+                    <button type="submit" class="btn-login-submit">
                         <span>Masuk</span>
                     </button>
-                    <a href="beranda" class="back-link">
+
+                    <a href="{{ url('beranda') }}" class="back-link">
                         <ion-icon name="arrow-back-outline"></ion-icon>
                         <span>Kembali</span>
                     </a>
