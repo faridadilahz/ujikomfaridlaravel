@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sekolah Seru Sekali - Seruli</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="{{ asset('css/beranda.css') }}" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="../landing-page/index.html" class="logo">
+        <img src="assets/img/logosss.png" alt="Logo Seruli" class="logo-img" />
+        <span class="logo-text">Seruli</span>
+      </a>
+      <nav class="nav-menu">
+        <a href="beranda" class="nav-link active">Beranda</a>
+        <a href="berita" class="nav-link">Berita</a>
+        <a href="galeri" class="nav-link">Galeri</a>
+        <a href="faq" class="nav-link">FAQ</a>
+      </nav>
+      <a href="login" class="btn-masuk">Masuk</a>
+    </div>
+  </header>
+
+  <section id="beranda" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="badge-welcome">Selamat datang di</span>
+        <h1 class="hero-title">
+          Website Resmi<br /><span class="text-primary">Sekolah Seru Sekali</span>
+        </h1>
+        <p class="hero-subtitle">
+          Mewujudkan generasi unggul, berkarakter, dan kompeten di bidang
+          teknologi dan kejuruan. Siap kerja, santun, mandiri dan kreatif.
+        </p>
+      </div>
+      <div class="hero-image">
+        <img src="assets/img/logosss.png" alt="Sekolah Seru Sekali" />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="hero-stats">
+        <div class="stat-card">
+          <h3>1.160+</h3>
+          <p>SISWA AKTIF</p>
+        </div>
+        <div class="stat-card">
+          <h3>4</h3>
+          <p>JURUSAN UNGGULAN</p>
+        </div>
+        <div class="stat-card">
+          <h3>56+</h3>
+          <p>GURU DAN STAF</p>
+        </div>
+        <div class="stat-card">
+          <h3>50+</h3>
+          <p>PRESTASI</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tentang" class="about-section">
+    <div class="container about-container">
+      <div class="about-content">
+        <span class="badge-subtitle">Tentang</span>
+        <h2 class="about-heading">
+          Mewujudkan generasi unggul, berkarakter, dan kompeten di bidang
+          teknologi dan kejuruan. Siap kerja, santun, mandiri, dan kreatif.
+        </h2>
+        <p class="about-text">
+          Sekolah Seru Sekali merupakan salah satu Sekolah Menengah Kejuruan
+          negeri unggulan di Kota Bogor yang berkomitmen mencetak lulusan
+          berkarakter, kompeten, dan siap bersaing di dunia industri global.
+          Dengan kurikulum yang terintegrasi dengan kebutuhan industri modern
+          serta fasilitas pembelajaran berbasis teknologi, Sekolah Seru Sekali
+          terus berinovasi dalam melahirkan generasi muda yang ahli di
+          bidangnya.
+        </p>
+      </div>
+
+      <div class="about-image">
+        <img src="assets/img/tentang-kami.jpg" alt="Tentang Sekolah Seru Sekali" />
+      </div>
+    </div>
+  </section>
+
+  <section id="berita" class="news-section">
+    <div class="container news-container">
+      <div class="news-content">
+        <span class="badge-subtitle">Berita</span>
+      </div>
+
+      <div class="news-grid">
+        <article class="news-card">
+          <div class="news-card-image">
+            <img src="assets/img/berita-card.png" alt="Berita Seruli" />
+          </div>
+          <div class="news-card-body">
+            <div class="news-date">
+              <ion-icon name="calendar-outline"></ion-icon>
+              <span>27 Oktober 2025</span>
+            </div>
+            <h3 class="news-card-title">
+              Siswa PPLG Sekolah Seru Sekali Juara 2 TECHNOUPDATE X HIMPACT
+            </h3>
+            <p class="news-card-desc">
+              Selamat dan sukses kepada tim PPLG Sekolah Seru Sekali yang
+              berhasil meraih Juara 2 dalam ajang kompetisi teknologi
+              bergengsi tingkat provinsi.
+            </p>
+            <div class="news-card-footer">
+              <span class="badge-tag">Prestasi</span>
+              <a href="../berita-page/index.html" class="news-cta">
+                Lihat Selengkapnya
+                <ion-icon name="open-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-card-image">
+            <img src="assets/img/berita-card.png" alt="Berita Seruli" />
+          </div>
+          <div class="news-card-body">
+            <div class="news-date">
+              <ion-icon name="calendar-outline"></ion-icon>
+              <span>27 Oktober 2025</span>
+            </div>
+            <h3 class="news-card-title">
+              Siswa PPLG Sekolah Seru Sekali Juara 2 TECHNOUPDATE X HIMPACT
+            </h3>
+            <p class="news-card-desc">
+              Selamat dan sukses kepada tim PPLG Sekolah Seru Sekali yang
+              berhasil meraih Juara 2 dalam ajang kompetisi teknologi
+              bergengsi tingkat provinsi.
+            </p>
+            <div class="news-card-footer">
+              <span class="badge-tag">Prestasi</span>
+              <a href="../berita-page/index.html" class="news-cta">
+                Lihat Selengkapnya
+                <ion-icon name="open-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-card-image">
+            <img src="assets/img/berita-card.png" alt="Berita Seruli" />
+          </div>
+          <div class="news-card-body">
+            <div class="news-date">
+              <ion-icon name="calendar-outline"></ion-icon>
+              <span>27 Oktober 2025</span>
+            </div>
+            <h3 class="news-card-title">
+              Siswa PPLG Sekolah Seru Sekali Juara 2 TECHNOUPDATE X HIMPACT
+            </h3>
+            <p class="news-card-desc">
+              Selamat dan sukses kepada tim PPLG Sekolah Seru Sekali yang
+              berhasil meraih Juara 2 dalam ajang kompetisi teknologi
+              bergengsi tingkat provinsi.
+            </p>
+            <div class="news-card-footer">
+              <span class="badge-tag">Prestasi</span>
+              <a href="../berita-page/index.html" class="news-cta">
+                Lihat Selengkapnya
+                <ion-icon name="open-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeri" class="gallery-section">
+    <div class="container gallery-container">
+      <div class="gallery-content">
+        <span class="badge-subtitle">Galeri</span>
+      </div>
+
+      <div class="gallery-grid">
+        <article class="gallery-card">
+          <div class="gallery-card-image">
+            <img src="assets/img/galeri-card.jpg" alt="Berita Seruli" />
+          </div>
+          <div class="gallery-card-body">
+            <div class="gallery-date">
+              <ion-icon name="calendar-outline"></ion-icon>
+              <span>27 Juli 2026</span>
+            </div>
+            <h3 class="gallery-card-title">
+              Upacara Bendera Rutin Hari Senin Sekolah Seru Sekali
+            </h3>
+            <div class="gallery-card-footer">
+              <span class="badge-tag">Kegiatan</span>
+              <a href="../galeri-page/index.html" class="gallery-cta">
+                Lihat Selengkapnya
+                <ion-icon name="open-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="gallery-card">
+          <div class="gallery-card-image">
+            <img src="assets/img/galeri-card.jpg" alt="Berita Seruli" />
+          </div>
+          <div class="gallery-card-body">
+            <div class="gallery-date">
+              <ion-icon name="calendar-outline"></ion-icon>
+              <span>27 Juli 2026</span>
+            </div>
+            <h3 class="gallery-card-title">
+              Upacara Bendera Rutin Hari Senin Sekolah Seru Sekali
+            </h3>
+            <div class="gallery-card-footer">
+              <span class="badge-tag">Kegiatan</span>
+              <a href="../galeri-page/index.html" class="gallery-cta">
+                Lihat Selengkapnya
+                <ion-icon name="open-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="gallery-card">
+          <div class="gallery-card-image">
+            <img src="assets/img/galeri-card.jpg" alt="Berita Seruli" />
+          </div>
+          <div class="gallery-card-body">
+            <div class="gallery-date">
+              <ion-icon name="calendar-outline"></ion-icon>
+              <span>27 Juli 2026</span>
+            </div>
+            <h3 class="gallery-card-title">
+              Upacara Bendera Rutin Hari Senin Sekolah Seru Sekali
+            </h3>
+            <div class="gallery-card-footer">
+              <span class="badge-tag">Kegiatan</span>
+              <a href="../galeri-page/index.html" class="gallery-cta">
+                Lihat Selengkapnya
+                <ion-icon name="open-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="faq-header">
+        <span class="badge-subtitle">FAQ</span>
+        <h2 class="section-title-center">Pertanyaan yang Sering Diajukan</h2>
+        <p class="faq-subtitle">
+          Tidak menemukan apa yang Anda inginkan? Hubungi kami
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item active">
+          <div class="faq-question">
+            <h3>
+              Apa saja program keahlian/jurusan yang ada di Sekolah Seru
+              Sekali?
+            </h3>
+            <ion-icon name="remove-outline" class="faq-icon"></ion-icon>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Sekolah Seru Sekali memiliki berbagai program keahlian unggulan
+              seperti Pengembangan Perangkat Lunak dan Gim (PPLG), Teknik
+              Jaringan Komputer dan Telekomunikasi (TJKT), Desain Komunikasi
+              Visual (DKV), dan Broadcasting & Perfilman.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>
+              Bagaimana jalur pendaftaran siswa baru di Sekolah Seru Sekali?
+            </h3>
+            <ion-icon name="add-outline" class="faq-icon"></ion-icon>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Pendaftaran siswa baru dapat dilakukan secara online melalui
+              portal resmi PPDB atau langsung datang ke Sekretariat PPDB
+              Sekolah Seru Sekali pada jam kerja.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>
+              Apakah Sekolah Seru Sekali menyediakan fasilitas tempat
+              tinggal/asrama?
+            </h3>
+            <ion-icon name="add-outline" class="faq-icon"></ion-icon>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Saat ini Sekolah Seru Sekali belum menyediakan asrama resmi,
+              namun terdapat banyak lokasi kos/kontrakan terdekat di sekitar
+              lingkungan sekolah.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>
+              Bagaimana sistem pembelajaran dan fasilitas praktikum di
+              sekolah?
+            </h3>
+            <ion-icon name="add-outline" class="faq-icon"></ion-icon>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Pembelajaran di Sekolah Seru Sekali menggunakan kurikulum
+              berbasis industri modern yang ditunjang laboratorium komputer
+              berstandar tinggi serta fasilitas praktik teknologi terkini.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <img src="assets/img/logosss.png" alt="Logo Seruli" class="logo-img-footer" />
+          <span class="logo-text">Seruli</span>
+        </a>
+        <p class="footer-desc">
+          Mewujudkan generasi unggul, berkarakter, dan kompeten di bidang
+          teknologi dan kejuruan. Siap kerja, santun, mandiri dan kreatif.
+        </p>
+
+        <div class="social-icons">
+          <a href="https://api.whatsapp.com/send/?phone=628212262442" class="social-icon-btn" target="_blank"
+            aria-label="WhatsApp">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <a href="https://www.instagram.com/smkn4kotabogor/" class="social-icon-btn" target="_blank"
+              aria-label="Instagram">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </a>
+          <a href="https://www.youtube.com/channel/UC4M-6Oc1ZvECz00MlMa4v_A/videos?app=desktop" class="social-icon-btn"
+            target="_blank" aria-label="Youtube">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+          <a href="https://web.facebook.com/profile.php?id=100054636630766" class="social-icon-btn" target="_blank"
+            aria-label="Facebook">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="mailto:smkn4@smkn4bogor.sch.id" class="social-icon-btn" target="_blank" aria-label="Facebook">
+            <ion-icon name="mail-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <ul class="footer-links">
+          <li><a href="beranda.html">Beranda</a></li>
+          <li><a href="berita.html">Berita</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+
+        <ul class="footer-links">
+          <li><a href="#kebijakan-privasi">Kebijakan Privasi</a></li>
+          <li><a href="#ketentuan-layanan">Ketentuan Layanan</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>
+          © Copyright 2026 Sekolah Seru Sekali. Hak Cipta Dilindungi
+          Undang-Undang.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll(".faq-item").forEach((item) => {
+      item.addEventListener("click", () => {
+        const isActive = item.classList.contains("active");
+
+        // Opsional: Tutup item lain pas klik item baru
+        document.querySelectorAll(".faq-item").forEach((i) => {
+          i.classList.remove("active");
+          const icon = i.querySelector(".faq-icon");
+          if (icon) icon.setAttribute("name", "add-outline");
+        });
+
+        // Toggle item yang diklik
+        if (!isActive) {
+          item.classList.add("active");
+          const icon = item.querySelector(".faq-icon");
+          if (icon) icon.setAttribute("name", "remove-outline");
+        }
+      });
+    });
+  </script>
+  <script>
+    // ==========================================
+    // AUTO ACTIVE NAVBAR LINK PER HALAMAN (PAGE URL)
+    // ==========================================
+    document.addEventListener("DOMContentLoaded", () => {
+      const currentPath = window.location.pathname;
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      navLinks.forEach((link) => {
+        // Hapus kelas active bawaan
+        link.classList.remove("active");
+
+        const linkPath = link.getAttribute("href");
+
+        // Cek apakah URL browser saat ini mengandung folder/path dari href link
+        if (linkPath && currentPath.includes(linkPath.replace("..", ""))) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
