@@ -123,8 +123,10 @@ button.nav-item-danger {
 }
 
 .nav-item-danger:hover {
-    background-color: #FEF2F2 !important; /* Background merah muda lembut */
-    color: #DC2626 !important;            /* Warna teks merah lebih tegas saat di-hover */
+    background-color: #FEF2F2 !important;
+    /* Background merah muda lembut */
+    color: #DC2626 !important;
+    /* Warna teks merah lebih tegas saat di-hover */
 }
 
 .nav-item-danger.active {
