@@ -1,6 +1,6 @@
 <header class="navbar">
     <div class="container nav-container">
-        <a href="../landing-page/index.html" class="logo">
+        <a href="beranda" class="logo">
             <img src="assets/img/logosss.png" alt="Logo Seruli" class="logo-img" />
             <span class="logo-text">Seruli</span>
             <link rel="stylesheet" href="{{ asset('css/partials/navbar.css') }}" />
