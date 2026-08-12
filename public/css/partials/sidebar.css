@@ -133,3 +133,77 @@ button.nav-item-danger {
     background-color: #D94245;
     color: var(--white);
 }
+
+/* ================= CSS MODAL LOGOUT ================= */
+.logout-modal-overlay {
+    display: none; /* Sembunyi secara default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang gelap transparan */
+    z-index: 99999; /* Agar muncul di paling depan layar */
+    align-items: center;
+    justify-content: center;
+}
+
+.logout-modal-box {
+    background: #ffffff;
+    width: 90%;
+    max-width: 480px;
+    padding: 24px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.logout-modal-box h3 {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.logout-modal-box p {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    color: #6b7280;
+}
+
+.logout-modal-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.logout-modal-btns button {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Google Sans' !important;
+}
+
+.btn-batal {
+    background-color: #ffffff;
+    border: 1px solid var(--border-color-danger);
+    color: var(--border-color-danger);
+    transition: all 0.3s ease;
+}
+
+.btn-batal:hover {
+    background-color: #f5f5f5;
+}
+
+.btn-ya {
+    background-color: var(--primary-danger);
+    color: #ffffff;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-ya:hover {
+    background-color: var(--primary-danger-hover);
+}

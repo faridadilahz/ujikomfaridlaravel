@@ -45,9 +45,9 @@
         </a>
       </li>
       <li>
-        <form action="{{ route('logout') }}" method="POST" style="margin: 0;">
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="margin: 0;">
           @csrf
-          <button type="submit" class="nav-item-danger">
+          <button type="button" class="nav-item nav-item-danger" onclick="showLogoutModal()">
             <ion-icon name="log-out-outline"></ion-icon>
             <span>Keluar</span>
           </button>
@@ -56,3 +56,29 @@
     </ul>
   </div>
 </aside>
+
+<div id="logoutModal" class="logout-modal-overlay">
+  <div class="logout-modal-box">
+    <h3>Keluar dari Akun?</h3>
+    <p>Anda akan keluar dari admin Seruli Anda. Apakah Anda yakin ingin melanjutkan?</p>
+
+    <div class="logout-modal-btns">
+      <button type="button" class="btn-batal" onclick="hideLogoutModal()">Batal</button>
+      <button type="button" class="btn-ya" onclick="submitLogout()">Ya, Keluar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showLogoutModal() {
+    document.getElementById('logoutModal').style.display = 'flex';
+  }
+
+  function hideLogoutModal() {
+    document.getElementById('logoutModal').style.display = 'none';
+  }
+
+  function submitLogout() {
+    document.getElementById('logout-form').submit();
+  }
+</script>
