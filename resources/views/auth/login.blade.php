@@ -11,7 +11,7 @@
         rel="stylesheet" />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="{{ asset('css/login.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/auth/login.css') }}" />
 </head>
 
 <body>
@@ -23,7 +23,7 @@
 
             <div class="login-card-right">
 
-                <a href="../landing-page/index.html" class="logo">
+                <a href="beranda" class="logo">
                     <img src="assets/img/logosss.png" alt="Logo Seruli" class="logo-img" />
                     <span class="logo-text">Seruli</span>
                 </a>
@@ -75,7 +75,7 @@
 
                     <a href="{{ url('beranda') }}" class="back-link">
                         <ion-icon name="arrow-back-outline"></ion-icon>
-                        <span>Kembali</span>
+                        <span>Kembali ke Beranda</span>
                     </a>
                 </form>
 

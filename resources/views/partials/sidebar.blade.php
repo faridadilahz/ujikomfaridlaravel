@@ -1,8 +1,9 @@
 <aside class="sidebar">
   <div class="sidebar-brand">
-    <a href="../beranda" class="logo">
+    <a href="{{ url('/beranda') }}" class="logo">
       <img src="{{ asset('assets/img/logosss.png') }}" alt="Logo Seruli" class="logo-img" />
       <span class="logo-text">Seruli</span>
+      <link rel="stylesheet" href="{{ asset('css/partials/sidebar.css') }}" />
     </a>
   </div>
 
@@ -15,19 +16,19 @@
         </a>
       </li>
       <li>
-        <a href="#" class="nav-item">
+        <a href="{{ route('admin.berita') }}" class="nav-item {{ request()->routeIs('admin.berita') ? 'active' : '' }}">
           <ion-icon name="newspaper-outline"></ion-icon>
           <span>Kelola Berita</span>
         </a>
       </li>
       <li>
-        <a href="#" class="nav-item">
+        <a href="{{ route('admin.galeri') }}" class="nav-item {{ request()->routeIs('admin.galeri') ? 'active' : '' }}">
           <ion-icon name="images-outline"></ion-icon>
           <span>Kelola Galeri</span>
         </a>
       </li>
       <li>
-        <a href="#" class="nav-item">
+        <a href="{{ route('admin.faq') }}" class="nav-item {{ request()->routeIs('admin.faq') ? 'active' : '' }}">
           <ion-icon name="help-circle-outline"></ion-icon>
           <span>Kelola FAQ</span>
         </a>
@@ -36,18 +37,22 @@
   </div>
 
   <div class="sidebar-footer">
-    <li>
-        <a href="#" class="nav-item">
-          <ion-icon name="help-circle-outline"></ion-icon>
-          <span>Kelola FAQ</span>
+    <ul class="sidebar-menu">
+      <li>
+        <a href="{{ route('admin.profil') }}" class="nav-item {{ request()->routeIs('admin.profil') ? 'active' : '' }}">
+          <ion-icon name="person-outline"></ion-icon>
+          <span>Profil</span>
         </a>
       </li>
-    <form action="{{ route('logout') }}" method="POST">
-      @csrf
-      <button type="submit" class="btn-logout" style="background: none; border: none; width: 100%; cursor: pointer;">
-        <ion-icon name="log-out-outline"></ion-icon>
-        <span>Keluar</span>
-      </button>
-    </form>
+      <li>
+        <form action="{{ route('logout') }}" method="POST" style="margin: 0;">
+          @csrf
+          <button type="submit" class="nav-item-danger">
+            <ion-icon name="log-out-outline"></ion-icon>
+            <span>Keluar</span>
+          </button>
+        </form>
+      </li>
+    </ul>
   </div>
 </aside>

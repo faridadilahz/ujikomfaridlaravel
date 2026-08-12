@@ -1,23 +1,11 @@
+@import '../variables.css';
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     scroll-padding-top: 24px;
-}
-
-:root {
-    --primary-color: #4274D9;
-    --primary-hover: #1d4ed8;
-    --primary-light: #eff6ff;
-    --text-dark: #0f172a;
-    --text-muted: #aaaaaa;
-    --bg-light: #F5F5F5;
-    --white: #ffffff;
-    --border-color: #eeeeee;
-    --radius-md: 10px;
-    --radius-lg: 16px;
-    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 body {
@@ -35,7 +23,7 @@ body {
     padding: 0;
     background: linear-gradient(#f5f5f5e6,
             #f5f5f5),
-        url('../assets/img/fotosmkn4bogor.jpg');
+        url('../../assets/img/fotosmkn4bogor.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

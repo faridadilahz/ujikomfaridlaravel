@@ -1,3 +1,5 @@
+@import '../variables.css';
+
 * {
     margin: 0;
     padding: 0;
@@ -119,17 +121,20 @@ body {
     font-size: 18px;
 }
 
-.news-section {
-    padding: 36px 72px;
+/* ==========================================
+   SECTION FAQ ACCORDION
+========================================== */
+.faq-section {
+    padding: 30px 0;
     background-color: var(--bg-light);
 }
 
-.news-content {
-    margin-bottom: 16px;
+.faq-header {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 36px;
 }
 
 .section-title-center {
@@ -139,217 +144,74 @@ body {
     margin-top: 8px;
 }
 
-/* ==========================================
-   SEARCH BAR SECTION BERITA
-========================================== */
-.news-search-box {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
-    max-width: 596px;
-    /* Ukuran lebar pas di tengah */
-    margin: 8px auto 48px auto;
-}
-
-.search-input-wrapper {
-    position: relative;
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
-
-.search-icon {
-    position: absolute;
-    left: 20px;
-    font-size: 16px;
+.faq-subtitle {
+    font-size: 20px;
     color: var(--text-muted);
-    pointer-events: none;
 }
 
-.search-input {
-    width: 100%;
-    padding: 16px 16px 16px 48px;
-    /* Padding kiri lega buat tempat icon */
+/* Container List Accordion */
+.faq-list {
+    max-width: 840px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Card Item FAQ */
+.faq-item {
     background-color: var(--white);
     border: 1px solid var(--border-color);
-    border-radius: 38px;
-    font-family: inherit;
-    font-size: 16px;
-    color: var(--text-dark);
-    outline: none;
-    transition: all 0.2s ease;
-}
-
-.search-input::placeholder {
-    color: #94a3b8;
-}
-
-.search-input:focus {
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(66, 116, 217, 0.15);
-}
-
-/* Tombol Cari */
-.btn-search {
-    padding: 16px 24px;
-    background-color: var(--primary-color);
-    color: var(--white);
-    border: none;
-    border-radius: 38px;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-.btn-search:hover {
-    background-color: var(--primary-hover);
-}
-
-.btn-search:active {
-    transform: scale(0.98);
-}
-
-/* Grid 3 Kolom */
-.news-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-}
-
-/* Base Card */
-.news-card {
-    background-color: #ffffff;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    display: flex;
-    padding: 12px;
-    border: 1.5px solid #EEEEEE;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.news-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
-}
-
-.news-card-image {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
     border-radius: 8px;
+    padding: 20px 16px;
+    box-shadow: var(--shadow-card);
+    cursor: pointer;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.news-card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.faq-item:hover {
+    border-color: #cbd5e1;
 }
 
-.news-card-body {
-    padding-top: 16px;
+.faq-question {
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.news-date {
-    display: inline-flex;
+    justify-content: space-between;
     align-items: center;
-    line-height: 0.6;
-    gap: 8px;
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--text-muted);
-    margin-bottom: 8px;
-}
-
-.news-date ion-icon {
-    font-size: 13px;
-    color: var(--text-muted);
-}
-
-/* 🔴 TRUNCATE 3 BARIS UNTUK JUDUL */
-.news-card-title {
-    font-size: 20px;
-    font-weight: 800;
-    line-height: 1.2;
-    color: var(--text-dark);
-    margin-bottom: 8px;
-
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-/* 🔴 TRUNCATE 3 BARIS UNTUK DESKRIPSI */
-.news-card-desc {
-    font-size: 16px;
-    color: var(--text-muted);
-    line-height: 1.4;
-    margin-bottom: 8px;
-
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-.badge-tag {
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--primary-color);
-    background-color: var(--primary-light);
-    padding: 4px 8px;
-    border-radius: 4px;
-}
-
-.news-card-footer {
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-    /* 🔴 Susun ke bawah */
-    align-items: flex-start;
-    /* Alur rata kiri */
     gap: 16px;
 }
 
-.news-cta {
-    width: 100%;
-    /* Biar lebarnya penuhi card */
-    display: inline-flex;
-    justify-content: center;
-    /* Teks & Icon di tengah */
-    align-items: center;
-    gap: 8px;
+.faq-question h3 {
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--text-dark);
+    line-height: 1.4;
+}
 
-    padding: 16px 16px;
-    /* Bikin tombol makin tebal/gede */
-    background-color: var(--primary-color);
-    color: var(--white);
-    border-radius: 8px;
+.faq-icon {
+    font-size: 22px;
+    color: var(--primary-color);
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
 
+/* Area Jawaban (Hidden secara Default) */
+.faq-answer {
+    display: none;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-muted);
     font-size: 16px;
-    line-height: 1;
-    font-weight: 700;
-    text-decoration: none;
-    transition: all 0.2s ease;
+    line-height: 1.6;
 }
 
-.news-cta ion-icon {
-    font-size: 18px;
+/* State Aktif saat Accordion Terbuka */
+.faq-item.active {
+    border-color: #cbd5e1;
 }
 
-/* Efek Hover Tombol CTA */
-.news-cta:hover {
-    background-color: var(--primary-hover);
-    color: #ffffff;
+.faq-item.active .faq-answer {
+    display: block;
 }
 
 /* ==========================================

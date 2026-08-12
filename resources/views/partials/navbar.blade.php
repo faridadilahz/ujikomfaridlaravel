@@ -3,6 +3,7 @@
             <a href="../landing-page/index.html" class="logo">
                 <img src="assets/img/logosss.png" alt="Logo Seruli" class="logo-img" />
                 <span class="logo-text">Seruli</span>
+                <link rel="stylesheet" href="{{ asset('css/partials/navbar.css') }}" />
             </a>
             <nav class="nav-menu">
                 <a href="beranda" class="nav-link active">Beranda</a>
