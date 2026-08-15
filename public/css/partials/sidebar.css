@@ -161,7 +161,7 @@ button.nav-item-danger {
 .logout-modal-box h3 {
     margin: 0 0 8px 0;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 900;
     color: #111827;
 }
 
@@ -188,7 +188,7 @@ button.nav-item-danger {
 
 .btn-batal {
     background-color: #ffffff;
-    border: 1px solid var(--border-color-danger);
+    border: 1.5px solid var(--border-color-danger);
     color: var(--border-color-danger);
     transition: all 0.3s ease;
 }

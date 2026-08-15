@@ -67,13 +67,8 @@
                 <div class="content-card">
                     <div class="card-header">
                         <div>
-                            <h3 class="card-title">Foto Terakhir Diposting</h3>
-                            <p class="card-subtitle">Maksimal 3 foto kegiatan yang baru saja diunggah ke galeri.</p>
+                            <h3 class="card-title-content">Foto Terakhir Diposting</h3>
                         </div>
-                        <a href="#" class="btn-action-outline">
-                            <span>Lihat Semua</span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </a>
                     </div>
 
                     <div class="news-grid">
