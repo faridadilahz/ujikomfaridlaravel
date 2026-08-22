@@ -1,7 +1,7 @@
 /* Grid 3 Kolom */
 .news-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 12px;
 }
 
@@ -123,7 +123,6 @@
        background-color: var(--primary-color);
        color: var(--white);
        border-radius: 8px;
-
        font-size: 16px;
        line-height: 1;
        font-weight: 700;
@@ -140,3 +139,43 @@
        background-color: var(--primary-hover);
        color: #ffffff;
    }
+
+   /* Container Tombol Aksi */
+.action-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Tombol Edit */
+.btn-edit {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-edit:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Tombol Hapus */
+.btn-delete {
+    background-color: #FEF2F2;
+    color: #DC2626;
+    border: 1px solid #FCA5A5;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn-delete:hover {
+    background-color: #DC2626;
+    color: #FFFFFF;
+}
+
+/* Fallback Data Kosong */
+.empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    color: var(--text-muted);
+}

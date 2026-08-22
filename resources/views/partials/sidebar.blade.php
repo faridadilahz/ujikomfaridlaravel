@@ -1,9 +1,10 @@
+<link rel="stylesheet" href="{{ asset('css/partials/sidebar.css') }}" />
+
 <aside class="sidebar">
   <div class="sidebar-brand">
     <a href="{{ url('/beranda') }}" class="logo">
       <img src="{{ asset('assets/img/logosss.png') }}" alt="Logo Seruli" class="logo-img" />
       <span class="logo-text">Seruli</span>
-      <link rel="stylesheet" href="{{ asset('css/partials/sidebar.css') }}" />
     </a>
   </div>
 

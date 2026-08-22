@@ -25,12 +25,7 @@
 
         <main class="main-content">
 
-            <header class="topbar">
-                <div class="topbar-left">
-                    <h1 class="page-title">Dasbor Seruli</h1>
-                    <p class="page-subtitle">Selamat datang kembali di panel kontrol Admin Seruli.</p>
-                </div>
-            </header>
+            @include('partials.topbar')
 
             <div class="dashboard-body">
 

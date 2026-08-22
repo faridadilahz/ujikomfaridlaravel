@@ -2,7 +2,8 @@
 
 .topbar {
     background-color: var(--white);
-    padding: 20px 32px;
+    padding: 0px 32px;
+    height: 96px;
     border-bottom: 1px solid var(--border-color);
     display: flex;
     justify-content: space-between;

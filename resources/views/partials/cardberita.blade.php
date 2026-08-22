@@ -27,8 +27,6 @@
                 </div>
             </article>
         </div>
-        </div>
-
         {{-- <link rel="stylesheet" href="{{ asset('css/partials/cardberita.css') }}" />
 
 <div class="news-grid">
